@@ -1,0 +1,196 @@
+.kv{
+    height: calc(100vh + 15rem);
+    margin-bottom: 12.8rem;
+    flex-direction: column;
+    background: url('/interview/kv_bg.svg') no-repeat center 0/cover;
+}
+
+.kv div:first-child{
+    width: 80.5rem;
+    height: 45.3rem;
+    transform: translateY(-20rem);
+}
+
+.interview{
+    background: url('/interview/special_bg.svg') repeat-y center 0/cover;
+}
+
+.interview .wrap{
+    width: 80%;
+    align-items: center;
+}
+
+.interview .wrap:nth-child(odd){
+    margin: 0 auto 12.4rem 0;
+}
+
+.interview .wrap:nth-child(even){
+    margin: 0 0 12.4rem auto;
+    flex-direction: row-reverse;
+}
+
+.interview .wrap > div{
+    width: 54%;
+}
+
+.interview .wrap:nth-child(odd) > span{
+    margin-left: 17rem;
+    position: relative;
+}
+
+.interview .wrap:nth-child(even) > span{
+    margin-right: 17rem;
+    position: relative;
+}
+
+.interview .wrap:nth-child(odd) > span::before{
+    position: absolute;
+    content: '';
+    width: calc(100% + 14rem);
+    height: 100%;
+    left: -17rem;
+    top: 3rem;
+    z-index: -1;
+    background: linear-gradient(to right, #0F5093, #3B97D9);
+}
+
+.interview .wrap:nth-child(even) > span::before{
+    position: absolute;
+    content: '';
+    width: calc(100% + 14rem);
+    height: 100%;
+    right: -17rem;
+    top: 3rem;
+    z-index: -1;
+    background: linear-gradient(to right, #0F5093, #3B97D9);
+}
+
+.interview .wrap:nth-child(odd) h3{
+    font-size: 4rem;
+    padding: 1.2rem 0 1.2rem 7rem;
+    color: white;
+    margin-bottom: 5rem;
+    background:  linear-gradient(to right, #0F5093, #3B97D9);
+}
+
+.interview .wrap:nth-child(even) h3{
+    font-size: 4rem;
+    padding: 1.2rem 3rem 1.2rem 0;
+    color: white;
+    text-align: right;
+    margin-bottom: 5rem;
+    background:  linear-gradient(to right, #0F5093, #3B97D9);
+}
+
+.interview .wrap p span{
+    color: #0F5093;
+}
+
+.interview .wrap:nth-child(odd) p{
+    margin-left: 10rem;
+}
+
+.interview .wrap:nth-child(even) p{
+    margin-right: 10rem;
+}
+
+@media screen and (max-width: 767px){
+    .kv{
+        padding-top: 5rem;
+        height: 42rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .kv div:first-child{
+        width: 85.33%;
+        height: 18rem;
+        transform: translateY(0);
+    }
+
+    .kv div:last-child{
+        color: white;
+        margin-top: 1rem;
+    }
+
+    .kv div:last-child h2{
+        text-align: center;
+        font-size: 2.4rem;
+        margin-bottom: .5rem;
+    }
+
+    .kv div:last-child h2 span{
+        font-size: 1.1rem;
+    }
+
+    .kv div:last-child h3{
+        font-size: 2rem;
+    }
+
+    .interview {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .interview .wrap{
+        width: 90%;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .interview .wrap:nth-child(odd){
+        margin-bottom: 7.7rem;
+    }
+
+    .interview .wrap:nth-child(even){
+        flex-direction: column;
+        margin-bottom: 7.7rem;
+    }
+
+    .interview .wrap > span{
+        width: 90%;
+        margin-bottom: 5rem;
+    }
+
+    .interview .wrap:nth-child(even) > span{
+        margin-right: 7rem;
+    }
+
+    .interview .wrap > span:nth-child(odd){
+        margin-left: 3rem;
+    }
+
+    .interview .wrap > span img{
+        width: 100%
+    }
+
+    .interview .wrap > div{
+        width: 100%;
+    }
+
+    .interview .wrap:nth-child(odd) h3{
+        font-size: 2rem;
+        padding: 1.2rem 0 1.2rem 2.5rem;
+        color: white;
+        margin-bottom: 5rem;
+        background:  linear-gradient(to right, #0F5093, #3B97D9);
+    }
+    
+    .interview .wrap:nth-child(even) h3{
+        font-size: 2rem;
+        padding: .8rem 3rem .8rem 0;
+        color: white;
+        text-align: right;
+        margin-bottom: 5rem;
+        background:  linear-gradient(to right, #0F5093, #3B97D9);
+    }
+
+    .interview .wrap:nth-child(odd) p{
+        margin-left: 4rem;
+    }
+
+    .interview .wrap:nth-child(even) p{
+        margin-right: 4rem;
+    }
+}

@@ -1,0 +1,255 @@
+.kv{
+    color: white;
+    height: calc(100vh - 9.5rem);
+    padding-top: 13rem;
+    background: url('/recruit/kv_bg.jpg') no-repeat center center/cover;
+}
+
+.kv h2{
+    font-size: 4rem;
+    text-align: center;
+    padding: 2.8rem 0;
+    margin-bottom: 20rem;
+    filter: drop-shadow(0 .3rem .6rem rgba(0,0,0,16%));
+    background: url('/recruit/kv_txt_bg.svg') no-repeat 0 center/80% auto;
+}
+
+.kv .wrap h3{
+    font-size: 4rem;
+}
+
+.kv .wrap p{
+    line-height: 1.8;
+    margin-left: 9rem;
+}
+
+.kv_txt{
+    display: none;
+}
+
+/* about */
+.about {
+    padding: 8.8rem 0 7.2rem;
+}
+
+.about .wrap{
+    width: 58.33%;
+    max-width: 1120px;
+    justify-content: space-between;
+}
+
+.about .wrap div{
+    width: 30%;
+    padding: 6rem 2.4rem 3.4rem;
+    border: .4rem solid #427CB9;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #427CB9;
+}
+
+.about .wrap div span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3.2rem;
+}
+
+.about .wrap div:first-child span > svg:first-child{
+    transform: translateX(2rem);
+}
+
+.about .wrap div:first-child span > svg:last-child{
+    transform: translateX(-2rem);
+}
+
+.about .wrap div h3{
+    font-size: 2rem;
+    margin-bottom: 2.4rem;
+}
+
+.about .wrap div p{
+    font-size: 1.6rem;
+}
+
+.about .wrap div p+p{
+    margin-top: 1.6rem;
+}
+
+/* example */
+.example{
+    padding: 8rem 0 7.6rem;
+    flex-direction: column;
+    background: linear-gradient(to right, #0F5093, #409FE1);
+}
+
+.example .wrap{
+    width: 26%;
+    color: white;
+    padding: 3.2rem 2.1rem 3.2rem 4.8rem;
+    margin-bottom: 2.6rem;
+    background: linear-gradient(to right, #418ACD, #4E9FE1);
+}
+
+.example .wrap:nth-child(odd){
+    transform: translateX(-30%);
+}
+
+.example .wrap:nth-child(even){
+    transform: translateX(30%);
+}
+
+.example .wrap .left{
+    padding-right: 2.8rem;
+    margin-right: 3.2rem;
+    border-right: .1rem solid white;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.example .wrap .left span{
+    padding: 1rem;
+    border: .1rem solid white;
+    border-radius: 100%;
+}
+
+.example .wrap .left p{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 1.4rem;
+}
+
+.example .wrap .right p{
+    font-size: 1.6rem;
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.2rem;
+    white-space: pre-wrap;
+    position: relative;
+}
+
+.example .wrap .right p::before{
+    content: '';
+    position: absolute;
+    width: 27rem;
+    height: .1rem;
+    bottom: 0;
+    left: 0;
+    background: white;
+}
+
+.example .wrap .right p:last-child::before{
+    display: none;
+}
+
+.example > a{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36.8rem;
+    padding: 1.8rem 0;
+    font-size: 2.2rem;
+    color: #0F5093;
+    background: white;
+    border-radius: 2.6rem;
+    box-shadow: 0 .3rem .6rem rgba(0,0,0,16%);
+}
+
+.example > a >svg{
+    margin-left: 1.5rem;
+}
+
+@media screen and (max-width: 767px){
+    .kv {
+        background: none;
+        height: unset;
+        padding-top: 7rem;
+    }
+
+    .kv h2{
+        font-size: 2.1rem;
+        text-align: center;
+        padding: 1.2rem 0;
+        margin-bottom: 3rem;
+        background: url('/recruit/kv_txt_sp_bg.svg') no-repeat 0 center/80% auto;
+    }
+
+    .kv .wrap{
+        height: 27rem;
+        background: url('/recruit/kv_bg.jpg') no-repeat center center/cover;
+    }
+
+    .kv .wrap h3{
+        font-size: 2.4rem;
+        transform: translate(-5rem, 5rem);
+    }
+
+    .kv_txt{
+        padding: 3.6rem 0 10rem;
+        color: white;
+        display: block;
+        background: linear-gradient(to right, #0F5093, #409FE1);
+    }
+
+    .kv_txt p{
+        width: 85.33%;
+        margin: auto;
+        font-size: 1.2rem;
+    }
+
+    /* about */
+    .about{
+        padding: 3rem 0 5rem;
+    }
+
+    .about .wrap{
+        display: none;
+    }
+
+    .example{
+        padding: 5.2rem 0 4.2rem;
+    }
+
+    .example .wrap{
+        transform: none !important;
+        width: 85.33%;
+        padding: 1.8rem 1.2rem 1.8rem 2.6rem;
+    }
+
+    .example .wrap .left{
+        padding-right: 1.4rem;
+        margin-right: 1.4rem;
+        align-items: center;
+    }
+    
+    .example .wrap .left span svg{
+        height: 3.4rem;
+        width: 3.4rem;
+    }
+    
+    .example .wrap .left p{
+        font-size: 1rem;
+        margin-top: .8rem;
+    }
+
+    .example .wrap .right p{
+        font-size: 1.1rem;
+        padding-bottom: .75rem;
+        margin-bottom: .75rem;
+    }
+    
+    .example .wrap .right p::before{
+        width: 19rem;
+    }
+    
+    .example > a{
+        margin-top: 4.6rem;
+        width: 20rem;
+        padding: 1rem 0;
+        font-size: 1.2rem;
+    }
+    
+    .example > a >svg{
+        margin-left: .6rem;
+    }
+}

@@ -1,0 +1,437 @@
+.kv{
+    font-size: 4rem;
+    padding-top: 13rem;
+    margin-bottom: 8.2rem;
+}
+
+.kv h2{
+    color: white;
+    text-align: center;
+    padding: 2.8rem 0;
+    filter: drop-shadow(0 .3rem .6rem rgba(0,0,0,16%));
+    background: url('/recruit/kv_txt_bg.svg') no-repeat 0 center/80% auto;
+}
+
+/* message */
+
+.message .name{
+    width: 80%;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5.8rem;
+    position: relative;
+    margin-bottom: 6.4rem;
+}
+
+.message .name::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+    background: linear-gradient(to right, #0F5093, #409FE1);
+}
+
+.message .name h3{
+    color: white;
+    font-size: 3.8rem;
+    margin-right: 18.8rem;
+}
+
+.message .art01 h3{
+    color: white;
+    font-size: 3.4rem;
+    padding: 2.8rem 0 2.8rem 37%;
+    margin-bottom: 5.8rem;
+    background: url('/company/art01_bg.svg') no-repeat 0 center/80% auto;
+}
+
+.message .art01 p{
+    width: 25%;
+    margin: auto;
+    line-height: 2;
+}
+
+.message .art02{
+    margin-top: 6.4rem;
+}
+
+.message .art02 h3{
+    color: white;
+    font-size: 3.4rem;
+    padding: 2.8rem 0 2.8rem 37%;
+    margin-bottom: 5.8rem;
+    background: url('/company/art02_bg.svg') no-repeat 100% center/80% auto;
+}
+
+.message .art02 p{
+    width: 25%;
+    margin: auto;
+    line-height: 2;
+}
+
+.message .promise{
+    padding: 1.6rem 0;
+    margin: 6.4rem 0 4.8rem;
+    background: linear-gradient(to right, #0F5093, #409FE1);
+}
+
+.message .promise p{
+    padding: 3.6rem 0;
+    font-size: 3.2rem;
+    text-align: center;
+    color: white;
+    border: .3rem solid white;
+    width: 35%;
+}
+
+/* philosophy */
+.philosophy{
+    width: 72%;
+    justify-content: flex-end;
+    margin-bottom: 12rem;
+    background: linear-gradient(to right, #002D5B, #3778A5 80%);
+}
+
+.philosophy div{
+    flex-direction: column;
+    margin-right: 15rem;
+    color: white;
+}
+
+.philosophy div h2{
+    font-size: 3.2rem;
+    margin-bottom: 6.4rem;
+}
+
+.philosophy div p{
+    font-size: 3.2rem;
+    font-weight: normal;
+}
+
+/* motto */
+.motto{
+    width: 72%;
+    justify-content: flex-start;
+    margin: 0 0 12rem auto;
+    background: linear-gradient(to left, #002D5B, #3778A5 80%);
+}
+
+.motto div{
+    flex-direction: column;
+    margin-left: 10rem;
+    color: white;
+}
+
+.motto div h2{
+    font-size: 3.2rem;
+    margin-bottom: 6.4rem;
+}
+
+.motto div p{
+    font-size: 3.2rem;
+    font-weight: normal;
+}
+
+/* company */
+.company{
+    margin-bottom: 13.5rem;
+}
+
+.company .wrap{
+    width: 58.33%;
+    max-width: 1120px;
+    color: #427CB9;
+}
+
+.company .wrap h2{
+    font-size: 5rem;
+    margin-bottom: 7.6rem;
+}
+
+.company .wrap .content{
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.company .wrap .content > div{
+    width: 48%;
+}
+
+.company .wrap .content > div div{
+    padding-bottom: 1.6rem;
+    border-bottom: .1rem solid #707070;
+    padding-left: 2.1rem;
+    margin-bottom: 1.8rem;
+}
+
+.company .wrap .content > div div:first-child{
+    padding-top: 1.6rem;
+    border-top: .1rem solid #707070;
+}
+
+.company .wrap .content > div div h3{
+    font-size: 2rem;
+    width: 26rem;
+    line-height: 2;
+}
+
+.company .wrap .content > div div p{
+    line-height: 2;
+}
+
+/* accsess */
+
+.access{
+    margin-bottom: 10.5rem;
+}
+
+.access .wrap{
+    width: 58.33%;
+    max-width: 1120px;
+    color: #427CB9;
+}
+
+.access .wrap h2{
+    font-size: 5rem;
+    margin-bottom: 7.6rem;
+}
+
+.access .wrap .content{
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.access .wrap .content .left{
+    width: 48%;
+    height: 36.5rem;
+}
+
+.access .wrap .content .right{
+    width: 48%;
+}
+
+.access .wrap .content .right div{
+    margin-bottom: 1.8rem;
+    align-items: center;
+    padding-bottom: 1.6rem;
+    border-bottom: .1rem solid #707070;
+    padding-left: 2.1rem;
+}
+
+.access .wrap .content .right div:first-child{
+    padding-top: 1.6rem;
+    border-top: .1rem solid #707070;
+}
+
+.access .wrap .content .right div p{
+    line-height: 1.5;
+}
+
+.access .wrap .content .right div p:first-child{
+    width: 26rem;
+}
+
+@media screen and (max-width: 767px){
+    .kv{
+        padding-top: 7rem;
+        margin-bottom: 3.2rem;
+    }
+
+    .kv h2{
+        font-size: 2.1rem;
+        text-align: center;
+        padding: 1.2rem 0;
+        margin-bottom: 3rem;
+        background: url('/recruit/kv_txt_sp_bg.svg') no-repeat 0 center/80% auto;
+    }
+
+    /* message */
+    .message .wrap .name{
+        padding: 0;
+        width: 100%;
+    }
+
+    .message .wrap .name img{
+        width: 13.7rem !important;
+    }
+
+    .message .wrap .name h3{
+        font-size: 1.8rem;
+        margin-right: 6.2rem;
+    }
+
+    .message .wrap .name::before{
+        height: 100%;
+    }
+
+    .message .art01 h3{
+        font-size: 1.6rem;
+        padding: 1.4rem 0 1.4rem 5rem;
+        margin-bottom: 4rem;
+        background: url('/company/art01_sp_bg.svg') no-repeat center center /100%;
+    }
+
+    .message .art01 p{
+        width: 85.33%;
+        font-size: 1.4rem;
+    }
+
+    .message .art02{
+        margin-top: 4.2rem;
+    }
+
+    .message .art02 h3{
+        font-size: 1.6rem;
+        padding: 1.4rem 0 1.4rem 5rem;
+        margin-bottom: 4rem;
+        background: url('/company/art02_sp_bg.svg') no-repeat center center /100%;
+    }
+
+    .message .art02 p{
+        width: 85.33%;
+        font-size: 1.4rem;
+    }
+
+    .message .promise{
+        padding: .8rem 0;
+        margin: 5.4rem 0 4.6rem;
+    }
+    
+    .message .promise p{
+        padding: 1.4rem 0;
+        font-size: 1.6rem;
+        border: .1rem solid white;
+        width: 85.33%;
+    }
+
+    .philosophy{
+        width: 100%;
+        justify-content: flex-end;
+        margin-bottom: 3.6rem;
+    }
+    
+    .philosophy div{
+        margin-right: 3rem;
+    }
+    
+    .philosophy div h2{
+        font-size: 1.6rem;
+        margin-bottom: 3.4rem;
+    }
+    
+    .philosophy div p{
+        font-size: 1.6rem;
+        font-weight: normal;
+    }
+
+    .philosophy img{
+        width: 57.6%;
+    }
+
+    .motto{
+        width: 100%;
+        margin-bottom: 7.6rem;
+    }
+
+    .motto img{
+        width: 57.6%;
+    }
+
+    .motto div{
+        margin-left: 2.3rem;
+    }
+    
+    .motto div h2{
+        font-size: 1.6rem;
+        margin-bottom: 3.7rem;
+    }
+    
+    .motto div p{
+        font-size: 1.6rem;
+    }
+
+    .company {
+        margin-bottom: 8rem;
+    }
+
+    .company .wrap{
+        width: 85.33%;
+    }
+
+    .company .wrap h2{
+        font-size: 2.4rem;
+        margin-bottom: 3.46rem;
+    }
+
+    .company .wrap .content{
+        flex-direction: column;
+    }
+
+    .company .wrap .content > div{
+        width: 100%;
+    }
+
+    .company .wrap .content > div div:first-child{
+        padding-top: .95rem;
+    }
+
+    .company .wrap .content > .left div:last-child{
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    .company .wrap .content > div div{
+        padding-left: 1rem;
+        padding-bottom: .95rem;
+        margin-bottom: .95rem;
+    }
+
+    .company .wrap .content > div div h3{
+        font-size: 1.6rem;
+        width: 13.5rem;
+    }
+
+    .company .wrap .content > div div p{
+        font-size: 1.6rem;
+    }
+
+    .access .wrap{
+        width: 85.33%;
+    }
+
+    .access .wrap h2{
+        font-size: 2.4rem;
+        margin-bottom: 2.8rem;
+    }
+
+    .access .wrap .content{
+        flex-direction: column-reverse;
+    }
+
+    .access .wrap .content .right{
+        width: 100%;
+    }
+
+    .access .wrap .content .right div:first-child{
+        padding-top: .95rem;
+    }
+
+    .access .wrap .content .right div{
+        padding-left: 1rem;
+        padding-bottom: .95rem;
+        margin-bottom: .95rem;
+    }
+
+    .access .wrap .content .right div p:first-child{
+        width: 19.5rem;
+    }
+
+    .access .wrap .content .left{
+        width: 100%;
+        height: 20rem;
+    }
+}

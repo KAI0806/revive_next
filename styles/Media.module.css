@@ -1,0 +1,507 @@
+.kv{
+    position: relative;
+}
+
+.kv::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 60.17rem;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    z-index: -1;
+    filter: drop-shadow(0 .3rem .6rem rgba(0, 0, 0, 16%));
+    background: url('/service/human_kv_bg.svg') no-repeat center center/100%;
+}
+
+.kv::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 186rem;
+    bottom: 0;
+    left: 0;
+    transform: translateY(75%);
+    background: url('/service/human_bg.svg') no-repeat center center/cover;
+}
+
+.kv .wrap{
+    width: 58.33%;
+    max-width: 1120px;
+}
+
+.kv .wrap div{
+    width: 50%;
+    color: white;
+}
+
+.kv .wrap div h2{
+    font-size: 4rem;
+    margin-bottom: 13rem;
+}
+
+.kv .wrap div p{
+    white-space: pre-wrap;
+}
+
+.feature{
+    margin-top: 9.3rem;
+}
+
+.feature .wrap h2, .works .wrap h2{
+    font-size: 4rem;
+    color: white;
+    padding-left: 22rem;
+    width: 80%;
+    filter: drop-shadow(0 .3rem .6rem rgba(0, 0, 0, 16%));
+    background: url('/service/feature_bg.svg') no-repeat center center/100%;
+}
+
+.feature .wrap .content, .works .wrap .content{
+    margin: 6rem 0 8.8rem;
+    align-items: flex-start;
+}
+
+.feature .wrap, .works .wrap{
+    width: 58.33%;
+    max-width: 1120px;
+    background: white;
+    z-index: 10;
+    border: .1rem solid #0F5093;
+    box-shadow: 0 .3rem .6rem rgba(0, 0, 0, 16%);
+}
+
+.feature .wrap .content > div{
+    width: 20%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature .wrap .content > div:nth-child(2){
+    margin: 0 7.2rem;
+}
+
+.feature .wrap .content div span{
+    border: .5rem solid #0F5093;
+    border-radius: 100%;
+    padding: 1.2rem;
+    margin-bottom: 5.4rem;
+}
+
+.feature .wrap .content div h3{
+    font-size: 2rem;
+    text-align: center;
+    color: #0F5093;
+    white-space: pre-wrap;
+    margin-bottom: 5.6rem;
+}
+
+.feature .wrap .content div:first-child h3{
+    margin-bottom: 2.8rem;
+}
+
+.feature .wrap .content div p{
+    font-weight: normal;
+    color: #0F5093;
+}
+
+
+/* PR */
+
+.pr{
+    margin: 16rem 0 19rem;
+    padding: 6.4rem 0;
+    background: linear-gradient(to right, #0F5093, #409FE1);
+}
+
+.pr .wrap{
+    width: 58.33%;
+    max-width: 1120px;
+    color: white;
+}
+
+.pr .wrap .movie{
+    width: 46.5rem;
+    height: 27.15rem;
+}
+
+.pr .wrap > div{
+    width: 50%;
+}
+
+.pr .wrap .right{
+    flex-direction: column;
+}
+
+.pr .wrap .right h2{
+    font-size: 2rem;
+    text-align: center;
+    width: 18rem;
+    padding-bottom: 2.4rem;
+    border-bottom: .1rem solid white;
+    margin-bottom: 2.4rem;
+}
+
+.pr .wrap .right p{
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+
+/* works */
+.works .wrap .content{
+    width: 80%;
+    margin: 6rem auto 8.8rem;
+}
+
+.works .wrap .content .left{
+    width: 45%;
+    height: 27rem;
+    margin-right: 5%;
+    position: relative;
+    z-index: 10;
+}
+
+.works .wrap .content .left::before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    left: -4.5rem;
+    top: 2.5rem;
+    z-index: -1;
+    background: linear-gradient(to right, #0F5093, #409FE1);
+}
+
+.works .wrap .content .right{
+    width: 50%;
+}
+
+.works .wrap .content .right > div{
+    padding-left: 2.6rem;
+    padding-bottom: 1.6rem;
+    margin-bottom: 1.6rem;
+    border-bottom: .1rem solid #707070;
+    align-items: center;
+}
+
+.works .wrap .content .right > div:first-child{
+    border-top: .1rem solid #707070;
+    padding-top: 1.6rem;
+}
+
+.works .wrap .content .right > div:last-child{
+    margin-bottom: 0;
+}
+
+.works .wrap .content .right div:first-child span{
+    border: none;
+    width: 5rem;
+    height: 5rem;
+}
+
+.works .wrap .content .right div span{
+    border: .3rem solid #4F4F4F;
+    border-radius: 100%;
+    width: 4.3rem;
+    height: 4.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2.3rem;
+}
+
+.works .wrap .content .right div p{
+    font-size: 1.4rem;
+}
+
+.works .wrap .content .right div p+p{
+    margin-top: .9rem;
+}
+
+/* joblist */
+
+.joblist{
+    margin: 7.8rem 0 7.4rem;
+    padding: 3.6rem 0;
+    flex-direction: column;
+    background: #D6E8F4;
+}
+
+.joblist > p{
+    color: #0F5093;
+    font-size: 2.8rem;
+    margin-bottom: 4.8rem;
+}
+
+.joblist > div{
+    align-items: flex-end;
+}
+
+.joblist div div{
+    flex-direction: column;
+    background: rgba(255, 255, 255, 32%);
+    border: .1rem solid #0F5093;
+    width: 12.5rem;
+    height: 15.6rem;
+    margin-right: .9rem;
+    justify-content: space-evenly;
+}
+
+.joblist div div p{
+    font-size: 1.8rem;
+    color: #0F5093;
+}
+
+@media screen and (max-width: 767px){
+    .kv{
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .kv::before{
+        width: 100%;
+        height: 100%;
+    }
+
+    .moviecreator .kv::before{
+        background: url('/service/moviecreator_bg.jpg') no-repeat center center/cover;
+    }
+
+    .webcreator .kv::before{
+        background: url('/service/webcreator_bg.jpg') no-repeat center center/cover;
+    }
+
+    .kv .wrap{
+        width: 100%;
+        position: relative;
+    }
+
+    .kv .wrap::before{
+        position: absolute;
+        content: '';
+        width: 80%;
+        height: .3rem;
+        top: -5rem;
+        left: -10rem;
+        transform: rotateZ(-45deg) translate(10%, 0);
+        background: white;
+    }
+
+    .kv .wrap::after{
+        position: absolute;
+        content: '';
+        width: 80%;
+        height: .3rem;
+        bottom: -5rem;
+        right: -10rem;
+        transform: rotateZ(-45deg) translate(10%, 0);
+        background: white;
+    }
+
+    .kv .wrap div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .kv .wrap div h2{
+        font-size: 3.6rem;
+        margin-bottom: 14rem;
+    }
+
+    .kv .wrap div p{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .feature{
+        margin-top: 3.8rem;
+    }
+
+    .feature .wrap, .about .wrap{
+        width: 100%;
+        border: none;
+        box-shadow: none;
+    }
+
+    .feature .wrap h2{
+        font-size: 2.4rem;
+        color: #0F5093;
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        background: url('/service/feature_sp_bg.svg') no-repeat -1rem center/100% auto;
+    }
+
+    .feature .wrap .content, .works .wrap .content{
+        margin: 5.4rem auto 5.6rem;
+        width: 85.33%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .feature .wrap .content > div:first-child{
+        border-top: .1rem solid #0F5093;
+        padding-top: 1.4rem;
+    }
+
+    .feature .wrap .content > div{
+        width: 100%;
+        align-items: center;
+        flex-direction: row;
+        border-bottom: .1rem solid #0F5093;
+        padding-bottom: 1.4rem;
+        margin-bottom: 1.4rem;
+        padding-left: 3.4rem;
+    }
+
+    .feature .wrap .content > div:nth-child(2){
+        margin: 0;
+        margin-bottom: 1.4rem;
+    }
+
+    .feature .wrap .content div span{
+        margin-bottom: 0;
+        border: 0.5rem solid #0F5093;
+        border-radius: 100%;
+        padding: 1rem;
+    }
+
+    .feature .wrap .content div span svg{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .feature .wrap .content div div:first-child h3{
+        margin-bottom: 1.4rem;
+    }
+
+    .feature .wrap .content div div{
+        margin-left: 3rem;
+    }
+
+    .feature .wrap .content div div h3{
+        text-align: left;
+        font-size: 1.2rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .feature .wrap .content > div:first-child h3{
+        margin-bottom: 1.4rem;
+    }
+
+    .feature .wrap .content div div p{
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .pr{
+        margin: 0 0 6.75rem;
+        padding: 2.2rem 1rem 6.8rem;
+    }
+
+    .pr .wrap{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .pr .wrap .movie{
+        width: 100%;
+        margin-bottom: 2.4rem;
+    }
+
+    .pr .wrap .left{
+        width: 100%;
+        margin-bottom: 2.8rem;
+    }
+
+    .pr .wrap div img{
+        width: 100%;
+    }
+
+    .pr .wrap .right h2{
+        font-size: 1.8rem;
+        padding-bottom: .65rem;
+        margin-bottom: 6.7rem;
+    }
+
+    /* works */
+    .works .wrap{
+        width: 100%;
+        border: 0;
+        box-shadow: none;
+    }
+
+    .works .wrap h2{
+        font-size: 2.4rem;
+        color: #0F5093;
+        text-align: center;
+        padding-right: 0;
+        padding-left: 7rem;
+        width: 100%;
+        margin-left: auto;
+        margin-right: 0;
+        background: url('/service/about_sp_bg.svg') no-repeat 115% center/80% auto;
+    }
+
+    .pr .wrap > div{
+        width: 100%;
+        margin-bottom: 2.4rem;
+    }
+
+    .works .wrap .content{
+        width: 85.33%;
+    }
+
+    .works .wrap .content .left{
+        width: 100%;
+        height: max-content;
+        margin-bottom: 6.6rem;
+    }
+
+    .works .wrap .content .right{
+        width: 100%;
+    }
+
+    .works .wrap .content .right > div:first-child{
+        padding-top: 1.1rem;
+    }
+
+    .works .wrap .content .right > div{
+        padding-left: 1.8rem;
+        padding-bottom: 1.1rem;
+        margin-bottom: 1.1rem;
+    }
+
+    .joblist{
+        margin: 0 0 7rem;
+        padding: 2.2rem 0;
+    }
+
+    .joblist > p{
+        font-size: 1.6rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .joblist > div{
+        width: 85.33%;
+    }
+
+    .joblist > div div{
+        width: 7rem;
+        height: 8.6rem;
+        margin-right: .5rem;
+    }
+
+    .joblist > div div svg{
+        width: 3.6rem;
+    }
+
+    .joblist > div div p{
+        font-size: 1rem;
+    }
+}

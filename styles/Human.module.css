@@ -1,0 +1,294 @@
+.kv{
+    position: relative;
+}
+
+.kv::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 60.17rem;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    z-index: -1;
+    filter: drop-shadow(0 .3rem .6rem rgba(0, 0, 0, 16%));
+    background: url('/service/human_kv_bg.svg') no-repeat center center/100%;
+}
+
+.kv::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 186rem;
+    bottom: 0;
+    left: 0;
+    transform: translateY(75%);
+    background: url('/service/human_bg.svg') no-repeat center center/cover;
+}
+
+.kv .wrap{
+    width: 58.33%;
+    max-width: 1120px;
+}
+
+.kv .wrap div{
+    width: 50%;
+    color: white;
+}
+
+.kv .wrap div h2{
+    font-size: 4rem;
+    margin-bottom: 13rem;
+}
+
+.kv .wrap div p{
+    white-space: pre-wrap;
+}
+
+.feature{
+    position: relative;
+}
+
+.feature, .about{
+    margin-top: 9.3rem;
+}
+
+.feature .wrap, .about .wrap{
+    width: 58.33%;
+    max-width: 1120px;
+    background: white;
+    z-index: 10;
+    border: .1rem solid #0F5093;
+    box-shadow: 0 .3rem .6rem rgba(0, 0, 0, 16%);
+}
+
+.feature .wrap h2{
+    font-size: 4rem;
+    color: white;
+    padding-left: 22rem;
+    width: 80%;
+    filter: drop-shadow(0 .3rem .6rem rgba(0, 0, 0, 16%));
+    background: url('/service/feature_bg.svg') no-repeat center center/100%;
+}
+
+.feature .wrap div, .about .wrap div{
+    justify-content: center;
+    margin: 6rem 0 8.8rem;
+}
+
+.feature .wrap div p, .about .wrap div p{
+    white-space: pre-wrap;
+    position: relative;
+    padding-left: 1rem;
+    line-height: 2;
+    color: #0F5093;
+}
+
+.feature .wrap div p:first-child, .about .wrap div p:first-child{
+    margin-right: 6.1rem;
+}
+
+.feature .wrap div p::before, .about .wrap div p::before{
+    content: '';
+    position: absolute;
+    width: 1.78rem;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    filter: drop-shadow(0, .3rem .6rem rgba(0, 0, 0, 16%));
+    background: url('/service/human_txt_left.svg') no-repeat center center/100% 100%;
+}
+
+.about .wrap h2{
+    font-size: 4rem;
+    color: white;
+    text-align: right;
+    padding-right: 22rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: 0;
+    filter: drop-shadow(0 .3rem .6rem rgba(0, 0, 0, 16%));
+    background: url('/service/about_bg.svg') no-repeat 1rem center/100%;
+}
+
+.joblist{
+    margin: 7.8rem 0 7.4rem;
+    padding: 3.6rem 0;
+    flex-direction: column;
+    background: #D6E8F4;
+}
+
+.joblist > p{
+    color: #0F5093;
+    font-size: 2.8rem;
+    margin-bottom: 4.8rem;
+}
+
+.joblist > div{
+    align-items: flex-end;
+}
+
+.joblist div div{
+    flex-direction: column;
+    background: rgba(255, 255, 255, 32%);
+    border: .1rem solid #0F5093;
+    width: 12.5rem;
+    height: 15.6rem;
+    margin-right: .9rem;
+    justify-content: space-evenly;
+}
+
+.joblist div div p{
+    font-size: 1.8rem;
+    color: #0F5093;
+}
+
+@media screen and (max-width: 767px){
+    .kv{
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .kv::before{
+        width: 100%;
+        height: 100%;
+    }
+
+    .jobchange, .outsoucing, .resourcedev{
+        background: url('/service/bg_sp.svg') repeat-y center /150%;
+    }
+
+    .jobchange .kv::before{
+        background: url('/service/jobchange_bg.jpg') no-repeat center center/cover;
+    }
+
+    .outsoucing .kv::before{
+        background: url('/service/outsoucing_bg.jpg') no-repeat center center/cover;
+    }
+
+    .resourcedev .kv::before{
+        background: url('/service/resourcedev_bg.jpg') no-repeat center center/cover;
+    }
+
+    .kv .wrap{
+        width: 100%;
+        position: relative;
+    }
+
+    .kv .wrap::before{
+        position: absolute;
+        content: '';
+        width: 80%;
+        height: .3rem;
+        top: -5rem;
+        left: -10rem;
+        transform: rotateZ(-45deg) translate(10%, 0);
+        background: white;
+    }
+
+    .kv .wrap::after{
+        position: absolute;
+        content: '';
+        width: 80%;
+        height: .3rem;
+        bottom: -5rem;
+        right: -10rem;
+        transform: rotateZ(-45deg) translate(10%, 0);
+        background: white;
+    }
+
+    .kv .wrap div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .kv .wrap div h2{
+        font-size: 3.6rem;
+        margin-bottom: 14rem;
+    }
+
+    .kv .wrap div p{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .feature{
+        margin-top: 3.8rem;
+    }
+
+    .feature .wrap, .about .wrap{
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        background: none;
+    }
+
+    .feature .wrap h2{
+        font-size: 2.4rem;
+        color: #0F5093;
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        background: url('/service/feature_sp_bg.svg') no-repeat -1rem center/100% auto;
+    }
+
+    .feature .wrap div, .about .wrap div{
+        justify-content: center;
+        flex-direction: column;
+        margin: 7.2rem auto;
+        width: 85.33%;
+    }
+
+    .feature .wrap div p:first-child, .about .wrap div p:first-child{
+        margin-right: 0;
+        margin-bottom: 7.4rem;
+    }
+
+    .about{
+        margin-top: 0;
+    }
+
+    .about .wrap h2{
+        font-size: 2.4rem;
+        color: #0F5093;
+        text-align: center;
+        padding-right: 0;
+        padding-left: 7rem;
+        width: 100%;
+        margin-left: auto;
+        margin-right: 0;
+        background: url('/service/about_sp_bg.svg') no-repeat 115% center/80% auto;
+    }
+
+    .joblist{
+        margin: 0 0 7rem;
+        padding: 2.2rem 0;
+    }
+
+    .joblist > p{
+        font-size: 1.6rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .joblist > div{
+        width: 85.33%;
+    }
+
+    .joblist > div div{
+        width: 7rem;
+        height: 8.6rem;
+        margin-right: .5rem;
+    }
+
+    .joblist > div div svg{
+        width: 3.6rem;
+    }
+
+    .joblist > div div p{
+        font-size: 1rem;
+    }
+}

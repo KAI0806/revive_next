@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="497.124" height="908.253" viewBox="0 0 497.124 908.253">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.027" y1="0.5" x2="0.98" y2="0.474" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0f5093"/>
+      <stop offset="1" stop-color="#409fe1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.027" x2="0.98" y2="0.526" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="グループ_1682" data-name="グループ 1682" transform="translate(60.172 -945.497)">
+    <g id="グループ_1492" data-name="グループ 1492" transform="translate(-61.953 912.905)">
+      <g id="グループ_1487" data-name="グループ 1487" transform="translate(447.386 379.555) rotate(-150)" opacity="0.23">
+        <path id="パス_1782" data-name="パス 1782" d="M59.49,103.039l196.451-1.366,48.61-100.3L0,0Z" transform="translate(0 0)" opacity="0.31" fill="url(#linear-gradient)"/>
+      </g>
+      <g id="グループ_1493" data-name="グループ 1493" transform="translate(10.158 5.045) rotate(30)" opacity="0.23">
+        <path id="パス_1782-2" data-name="パス 1782" d="M100.7,100.465l148.6-.1L296.652,1.357l-253.4-.4Z" transform="translate(7.898 1.323)" opacity="0.31" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="グループ_1494" data-name="グループ 1494" transform="translate(-60.172 1506.787)">
+      <g id="グループ_1487-2" data-name="グループ 1487" transform="translate(0 257.728) rotate(-30)" opacity="0.23">
+        <path id="パス_1782-3" data-name="パス 1782" d="M59.49,0,255.94,1.366l48.61,100.3L0,103.039Z" transform="translate(0)" opacity="0.31" fill="url(#linear-gradient-3)"/>
+      </g>
+      <g id="グループ_1493-2" data-name="グループ 1493" transform="translate(495.343 86.178) rotate(150)" opacity="0.23">
+        <path id="パス_1782-4" data-name="パス 1782" d="M57.452,0l148.6.1L253.4,99.107,0,99.51Z" transform="translate(0 0)" opacity="0.31" fill="url(#linear-gradient-3)"/>
+      </g>
+    </g>
+  </g>
+</svg>
